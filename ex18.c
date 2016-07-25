@@ -104,36 +104,8 @@ int main(int argc, char *argv[])
 	int *sorted = bubble_sort(numbers, count, sorted_order);
 	array_print(sorted, count);
 
-	// for (i = numbers; i < (numbers + count * 4); i += 4)
-	// {
-	// 	printf("%d ", i);
-	// }
-	printf("count = %d\n", count);
-
-	printf("sizeof(int) = %d\n", sizeof(int));
-	printf("count * sizeof(int) = %d\n", count * sizeof(int));
-
-	int result = (int)((int)(numbers) + (int)(count * sizeof(int)));
-
-	for (i = numbers; i < result; i += 4)
-	{
-		int *var = &i;
-		printf("%d ", *var);
-	}
-	printf("\n");
-
-	printf("%d\n", (int)(numbers));
-	printf("%d\n", (int)(result));
-
-	printf("\n");
-	printf("%d\n", sizeof(numbers));
-	printf("%d\n", sizeof(sorted));
-
 	free(numbers);
 	free(sorted);
-
-	printf("%d\n", sizeof(numbers));
-	printf("%d\n", sizeof(sorted));
 
 	return 0;
 }
