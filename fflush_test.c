@@ -9,7 +9,7 @@ int main()
 	{
 		fprintf(stdout, "\r%d", i);
 		
-		//fflush(stdout);
+		fflush(stdout);
 
 		sleep(1);
 
