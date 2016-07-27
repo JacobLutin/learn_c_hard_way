@@ -88,7 +88,7 @@ int main()
 	printf("%ld\n", memory);	
 	memory = malloc(sizeof(stack));
 	printf("%ld\n", memory);
-	memory = malloc(sizeof(stack));
+	memory = malloc(sizeof(stack)) ;
 	printf("%ld\n", memory);
 	memory = stack;
 	printf("%ld\n", memory);
